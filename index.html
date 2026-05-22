@@ -294,7 +294,7 @@ body{display:flex;align-items:flex-start;justify-content:center;padding:14px 10p
   <div class="pbitem"><div class="pbval">June 5</div><div class="pbsub">2026</div></div>
 </div>
   </div>
-  <div class="closed-banner"><strong>Event Closed</strong><span>RSVP and payment submissions are now closed. Thank you for celebrating with the family.</span></div>
+  <div class="closed-banner"><strong>RSVP & Payment Closed</strong><span>Thank you for your love and support.</span></div>
   <div class="cta-split">
 <div class="cta-split-title">&#8212; Event submissions are closed &#8212;</div>
 <div class="cta-two">
@@ -310,14 +310,14 @@ body{display:flex;align-items:flex-start;justify-content:center;padding:14px 10p
 <div class="view" id="vClosed">
 <div class="panel-g">
   <div class="gstrip"></div>
-  <div class="phdr-g"><h2 id="closedTitle">Event Closed</h2><p>Oyefemi Bobtomo Asa &middot; June 5th 2026</p></div>
+  <div class="phdr-g"><h2 id="closedTitle">RSVP & Payment Closed</h2><p>Oyefemi Bobtomo Asa &middot; June 5th 2026</p></div>
   <div class="pbody">
     <div class="closed-card">
       <div class="closed-icon">&#128274;</div>
       <h3 id="closedHeading">Submissions Closed</h3>
-      <p id="closedMessage">This event has officially ended. RSVP and payment submissions are now closed.</p>
+      <p id="closedMessage">RSVP and Aso Ebi payment are now closed. Thank you for your love and support.</p>
     </div>
-    <div class="closed-note">No new payments, RSVP entries, or check-ins can be submitted from this public page. Admins can still log in to view records, exports, and event data.</div>
+    <div class="closed-note">Thank you for celebrating with the family.</div>
     <button class="sbtn-g" type="button" onclick="sv('vLanding')">Back to Event Page</button>
   </div>
   <div class="gstrip"></div>
@@ -367,14 +367,14 @@ body{display:flex;align-items:flex-start;justify-content:center;padding:14px 10p
 <div class="view" id="vPay">
 <div class="panel-g">
   <div class="gstrip"></div>
-  <div class="phdr-g"><h2>Payment Closed</h2><p>This event is no longer accepting payments</p></div>
+  <div class="phdr-g"><h2>Aso Ebi Payment Closed</h2><p>Thank you for your support</p></div>
   <div class="pbody">
     <div class="closed-card">
       <div class="closed-icon">&#128274;</div>
       <h3>Payment Closed for This Event</h3>
-      <p>The aso ebi payment window has now closed. Please do not send any new transfer for this event.</p>
+      <p>Aso Ebi payment is now closed. Thank you for your support.</p>
     </div>
-    <div class="closed-note">The payment account details have been removed from this public page to prevent accidental transfers. Admins can still log in to view existing bookings and payment records.</div>
+    <div class="closed-note">Payment details are no longer available.</div>
     <button class="sbtn-g" type="button" onclick="sv('vLanding')">Back to Event Page</button>
   </div>
   <div class="gstrip"></div>
@@ -596,12 +596,12 @@ function showEventClosed(type){
   const message=document.getElementById('closedMessage');
   if(type==='rsvp'){
     title.textContent='RSVP Closed';
-    heading.textContent='RSVP Closed for This Event';
-    message.textContent='This event has officially ended, so RSVP submissions are no longer being accepted.';
+    heading.textContent='RSVP Closed';
+    message.textContent='RSVP is now closed. Thank you for your love and support.';
   }else{
     title.textContent='Payment Closed';
     heading.textContent='Payment Closed for This Event';
-    message.textContent='The aso ebi payment window has closed. Please do not send any new transfer for this event.';
+    message.textContent='Aso Ebi payment is now closed. Thank you for your support.';
   }
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
   document.getElementById('vClosed').classList.add('active');
